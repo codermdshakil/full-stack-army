@@ -86,7 +86,7 @@ const compareDessen = (a, b) =>b - a;
 const persons = ['shakil', 20, 'shakil@gmail.com'];
 
 const sentEmail = email => {
-    console.log('oi mia kaj koren taratari to ', email);
+    console.log('oi mia kaj koren taratari sending mail to -> ', email);
 }
 
 // here i have to remain index 2 what why it's a problem
@@ -95,9 +95,20 @@ const sentEmail = email => {
 
 // how to solved this problem ? here comes object to solved this problem 
 
-const personObj = {name:'Shakil', age:20, email:'ahmed@gmail.com'};
+const noyon = {name:'noyon', age:22, email:'noyon@gmail.com'};
+const nadim = {name:'nadim', age:21, email:'nadim@gmail.com'};
+const shakil = {name:'Shakil', age:20, email:'ahmed@gmail.com'};
+
+const allPersons = [noyon, nadim, shakil];
+
+
 
 // here we can easily use persobObj.email here we don't need to keep in mind the index value 
-sentEmail(personObj.email)
+// sentEmail(noyon.email)
+// sentEmail(nadim.email)
+// sentEmail(shakil.email)
+
+allPersons.forEach(person => sentEmail(person.email))
+
 
 
