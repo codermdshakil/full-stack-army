@@ -44,13 +44,15 @@ const numbers = [1, 6, 3, 8, 3, 7, 9, 4];
 //     }
 // })
 
-let sum = 0;
+// let sum = 0;
 
-//  Inside first 3 element event element sum
-numbers.forEach((value, i) => {
-  if (value % 2 === 0 && i <= 5) {
-    sum += value;
-  }
-});
+// //  Inside first 3 element event element sum
+// numbers.forEach((value, i) => {
+//   if (value % 2 === 0 && i <= 5) {
+//     sum += value;
+//   }
+// });
 
-console.log(sum);
+// console.log(sum);
+
+
