@@ -74,3 +74,6 @@ const compareDessen = (a, b) =>b - a;
 // forEach()	        Do something for every item
 // reduce()	            Turn array into a single value
 
+
+// when should i use Array - Ploral elements
+// when should i use Object - singular element
