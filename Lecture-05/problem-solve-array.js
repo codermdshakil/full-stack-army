@@ -18,4 +18,8 @@ for (let i = 0; i < arr.length; i++) {
 
 arr.length -= count;
 
-console.log(arr);
+// console.log(arr);
+
+// Solved this problem using declarative way 
+const filteredNumebrs = arr.filter(v => typeof v === 'number')
+console.log(filteredNumebrs);
