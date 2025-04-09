@@ -77,3 +77,27 @@ const compareDessen = (a, b) =>b - a;
 
 // when should i use Array - Ploral elements
 // when should i use Object - singular element
+
+
+// array problem
+
+// when we store persons data and we need to access person email so i need to remind email element index
+
+const persons = ['shakil', 20, 'shakil@gmail.com'];
+
+const sentEmail = email => {
+    console.log('oi mia kaj koren taratari to ', email);
+}
+
+// here i have to remain index 2 what why it's a problem
+// sentEmail(persons[2])
+
+
+// how to solved this problem ? here comes object to solved this problem 
+
+const personObj = {name:'Shakil', age:20, email:'ahmed@gmail.com'};
+
+// here we can easily use persobObj.email here we don't need to keep in mind the index value 
+sentEmail(personObj.email)
+
+
