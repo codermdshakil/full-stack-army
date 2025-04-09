@@ -14,3 +14,6 @@ const sum = 5 + 10; // here [5 + 10 is a expression]
 
 // Expression can be inside a statement! 
 // let sum = 5 + 3; 
+
+// Statement is do someting
+// Expression return a value
