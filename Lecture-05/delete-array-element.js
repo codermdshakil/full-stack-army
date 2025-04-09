@@ -12,3 +12,10 @@ const arr = [
 // using filter delete object from array
 // const withOutIdThreeItemArray = arr.filter(item => item.id != 3);
 // console.log(withOutIdThreeItemArray);
+
+
+// splice - Mutable
+const result = arr.splice(2,1); // result stored deleted Item 
+console.log(result); // result stored deleted Item 
+console.log(arr); // arr will deleted 3 item
+
