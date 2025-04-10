@@ -14,6 +14,10 @@ const copyThird = Array.from(numbers);
 // console.log(copyThird);
 
 
+// 4 way to copy array
+const original = [1, 2, 3];
+const copy = [].concat(original);
+console.log(copy);
 
 
 
