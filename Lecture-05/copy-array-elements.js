@@ -7,7 +7,14 @@ const copyNumbers = [...numbers];
 
 // 2 way to copy array
 const copySecond = numbers.slice();
-console.log(copySecond);
+// console.log(copySecond);
+
+// 3 way to copy array 
+const copyThird = Array.from(numbers);
+// console.log(copyThird);
+
+
+
 
 
 
