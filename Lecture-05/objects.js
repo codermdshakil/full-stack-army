@@ -36,3 +36,13 @@ testObj.name = "Shakil Ahmed"
 // console.log(testObj);
 
 
+
+// if i freeze any object that means next time i can't modify this object
+// Object.freeze(microphone);
+
+// keys and values values return in a array
+console.log(Object.keys(microphone));
+console.log(Object.values(microphone));
+
+
+
