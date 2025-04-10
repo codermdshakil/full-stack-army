@@ -41,8 +41,32 @@ testObj.name = "Shakil Ahmed"
 // Object.freeze(microphone);
 
 // keys and values values return in a array
-console.log(Object.keys(microphone));
-console.log(Object.values(microphone));
+
+// console.log(Object.keys(microphone));
+// console.log(Object.values(microphone));
+// console.log(Object.entries(microphone));  // return object properties in a array of array
+
+// keys take another way
+// for(let k in microphone){
+//     // k gives keys and microphone[k] gives values 
+//     console.log(k, microphone[k]);
+// }
+
+
+// Notation
+
+// dot notation 
+// console.log(microphone.brand);
+
+// array notation
+// console.log(microphone['brand']);
+
+const empty = {};
+
+// console.log(!empty); // return false
+console.log(Boolean(empty)); // return true
+
+
 
 
 
