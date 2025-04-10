@@ -61,10 +61,47 @@ testObj.name = "Shakil Ahmed"
 // array notation
 // console.log(microphone['brand']);
 
-const empty = {};
+// const empty = {};
 
 // console.log(!empty); // return false
-console.log(Boolean(empty)); // return true
+// console.log(Boolean(empty)); // return true
+
+
+// When I need array and when I need object?
+
+// ✅ When to use an Array
+// - Use arrays when:
+// - Order matters
+// - You just need a list of items
+// - You're going to loop over items
+// Example:
+// const tasks = ["task1", "task2", "task3"];
+
+
+// ✅ When to use an Object
+// - Use objects when:
+// - You need named properties
+// - You want to represent a real-world entity
+// - You need key-value access
+// 
+// Example:
+// const user = {
+//     name: "John",
+//     age: 25,
+//     email: "john@example.com",
+//   };
+
+
+
+// 🔚 Final Summary
+// - You can do CRUD on arrays.
+
+// But when you want to:
+// - Describe something with named attributes
+// - Make your code readable and maintainable
+// - Represent real-world data (user, product, post, etc.)
+// 👉 Use Objects.
+
 
 
 
