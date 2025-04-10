@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    .cart-item {
+      background-color: #fff;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      padding: 0.5rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .remove-btn {
+      background-color: #dc3545;
+    }
+    .remove-btn:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Shopping Cart</h2>
+
+  <div id="cart-container"></div>
+
+  <div>
+    <input type="text" id="product-name" placeholder="Product Name" required>
+    <input type="number" id="product-price" placeholder="Price" required>
+    <button id="add-item-btn">Add Item</button>
+  </div>
+
+  <script src="cart.js"></script>
+
+</body>
+</html>
