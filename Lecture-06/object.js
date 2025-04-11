@@ -17,6 +17,18 @@ const students = {
       },
 };
 
+
+/**
+ * what can we do in Object
+ *
+ * - Create a new one (easy) - O(1) 
+ * - Update - O(1)
+ * - Delete - O(1)
+ * - Easily Traverse - O(n)
+ *
+ */
+
+
 // traverse students 
 for(const student in students){
     // console.log(students[student].name);
@@ -55,6 +67,12 @@ students[updatedId] = {
     ...updatedobjData
 };
 
-console.log(students);
+// console.log(students);
+
+// delete
+
+const deletedId = '323985ae-d3da-4dee-b87d-7f1d5a6e0ca6';
+delete students[deletedId];
+// console.log(students);
 
 
