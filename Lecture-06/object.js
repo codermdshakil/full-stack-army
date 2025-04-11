@@ -25,14 +25,15 @@ const students = {
  * - Update - O(1)
  * - Delete - O(1)
  * - Easily Traverse - O(n)
+ * - Filter 1.1 - if you have key or id to find the object time complexity will be - O(1)
  *
  */
 
 
 // traverse students 
-for(const student in students){
+// for(const student in students){
     // console.log(students[student].name);
-}
+// }
 
 
 // Id Generator
@@ -74,5 +75,28 @@ students[updatedId] = {
 const deletedId = '323985ae-d3da-4dee-b87d-7f1d5a6e0ca6';
 delete students[deletedId];
 // console.log(students);
+
+
+// console.log(Object.keys(students));
+
+
+// Converts object in array using keys, values so that i can use array methods in object
+
+// keys
+// -------
+
+// Object.keys(students).forEach((key, idx) =>{
+//     // console.log(key, ' ', idx) 
+//     const student = students[key];
+//     console.log(student.name, student.email);
+// })
+
+
+// values
+// -------
+
+Object.values(students).forEach((student) =>{
+    console.log(student.name, " ", student.email);
+})
 
 
