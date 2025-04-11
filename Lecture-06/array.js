@@ -54,3 +54,31 @@ students.push({
 });
 
 
+// 2. Update 
+
+const idToUpdate = '63ecd4d0-2a92-41a5-acbb-cd54450f66dc';
+const updateData = {
+    name: 'Habiba Akhtar',
+	email: 'habiba@test.com',
+}
+
+// 1 way to update not best practice
+// const updatedObj = students.find((student) => student.id === id );
+// updatedObj.name = updateData.name;
+// updatedObj.email = updateData.email;
+
+
+
+// 2 way to update  Best way
+const updatedIndex = students.findIndex((student) => student.id === idToUpdate);
+
+students[updatedIndex]={
+    ...students[updatedIndex], // er mane age ja data silo ta thakbe new jai data ashbe seti e just update hobe
+    ...updateData
+}
+
+// console.log(students[updatedIndex]);
+console.log(students);
+
+
+ 
