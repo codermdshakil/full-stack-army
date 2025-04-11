@@ -40,5 +40,21 @@ const std = {
 };
 
 students[std.id] = std;
+// console.log(students);
+
+// Update
+const updatedId =  '84ca1b1b-b087-4c85-9b48-14c204f5e55c';
+
+const updatedobjData = {
+    name:'Noyon Rahman',
+    email:'noyon@gmail.com',
+};
+
+students[updatedId] = {
+    ...students[updatedId],
+    ...updatedobjData
+};
+
 console.log(students);
+
 
