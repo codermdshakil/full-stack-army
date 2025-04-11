@@ -78,7 +78,13 @@ students[updatedIndex]={
 }
 
 // console.log(students[updatedIndex]);
-console.log(students);
+console.log('Updated: ',students);
+
+
+// 3 Delete 
+students.splice(updatedIndex, 1);
+console.log('Delete: ', students);
+
 
 
  
