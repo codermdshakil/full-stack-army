@@ -36,11 +36,10 @@ const students = [
 
 /**
  * what can we do in Array
- * - Create a new one (easy)
- * - Update
- * - Delete
- * - Filter
- * - Easily Traverse
+ * - Create a new one (easy) - [push - O(1), unshift - O(n)]
+ * - Update - [push - O(n)]
+ * - Delete - [splice - O(n), filter - O(n)]
+ * - Easily Traverse 
  *
  */
 
@@ -109,4 +108,10 @@ const testObj = {
 // //   console.log(testObj[item]); // return value of object
 // }
 
+// for(const student of students){
+//  for(const items in student){
+//   // access students objects value
+//   console.log(student[items]);
+//  }
+// }
 
