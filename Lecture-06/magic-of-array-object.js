@@ -57,21 +57,9 @@ console.timeEnd('array delete item ');
 // console.timeEnd('Add-element-in-fast-of-object : ')
 
 // ** delete object item
-console.time('Object Delete time : ')
-delete arrayToObject[4000000];
-console.timeEnd('Object Delete time : ')
-
-
-
-
-
-
-
-
-
-
-
-
+// console.time('Object Delete time : ')
+// delete arrayToObject[4000000];
+// console.timeEnd('Object Delete time : ')
 
 
 
@@ -91,3 +79,27 @@ console.timeEnd('Object Delete time : ')
 // Time differents delete element from array and object
 // array delete item : 89.767ms
 // Object Delete time : : 0.94ms
+
+
+
+const objList = {
+    1:{id:1, value:'shakil'},
+    6:{id:6, value:'kamal'},
+    5:{id:5, value:'jamal'},
+    3:{id:3, value:'noyon'},
+    4:{id:4, value:'lalmia'},
+    2:{id:2, value:'nadim'},
+};
+
+// Step 1: Convert to array
+const sortedArray = Object.values(objList).sort((a, b) => a.id - b.id);
+console.log(sortedArray);
+
+
+// Step 2: Rebuild the object with ordered keys
+const orderedObj = {};
+sortedArray.forEach(item => {
+    orderedObj[item.id] = item;
+})
+console.log(orderedObj);
+ 
