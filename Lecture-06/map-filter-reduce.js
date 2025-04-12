@@ -35,3 +35,13 @@ const numbers = [1,2,3,4, false, '',NaN, 5, 6];
 // console.log(result);  // [1,2,3,4,5,6];
 
 
+const result1 = numbers.reduce((acc, cur) => {
+
+    if(cur){
+      acc.push(cur.toString());
+    }
+    return acc;
+}, []);
+
+console.log(result1);
+
