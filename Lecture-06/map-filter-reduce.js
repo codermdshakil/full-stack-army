@@ -35,13 +35,40 @@ const numbers = [1,2,3,4, false, '',NaN, 5, 6];
 // console.log(result);  // [1,2,3,4,5,6];
 
 
-const result1 = numbers.reduce((acc, cur) => {
+// const result1 = numbers.reduce((acc, cur) => {
 
-    if(cur){
-      acc.push(cur.toString());
+//     if(cur){
+//       acc.push(cur.toString());
+//     }
+//     return acc;
+// }, []);
+
+// console.log(result1);
+
+
+// Optimaization reduce, map and filter
+
+const nums = [];
+for(let i = 1; i <= 5000000; i++){
+    nums.push(i);
+}
+
+
+// using map, filter
+console.time('non-optimaized')
+nums.filter((v) => v%2==0).map((v) => v*2)
+console.timeEnd('non-optimaized')
+
+
+// using reduce
+console.time('Optimaized')
+nums.reduce((acc, cur) => {
+
+    if(cur%2==0){
+        acc.push(cur*2)
     }
     return acc;
+
 }, []);
 
-console.log(result1);
-
+console.timeEnd('Optimaized')
