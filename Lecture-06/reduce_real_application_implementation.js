@@ -37,4 +37,13 @@ const namesGroup = names.reduce((acc, cur) => {
 
 }, {});
 
-console.log(namesGroup);
+// console.log(namesGroup);
+
+
+Object.keys(namesGroup).forEach((groupKey) => {
+	console.log('-----------', groupKey, '-----------');
+	namesGroup[groupKey].forEach((name) => console.log(name));
+	console.log();
+});
+
+
